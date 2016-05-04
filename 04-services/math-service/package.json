@@ -1,0 +1,12 @@
+{
+  "name": "math-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "controller.js",
+  "scripts": {
+    "start": "http-server -c-1 -o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
