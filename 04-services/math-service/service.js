@@ -14,7 +14,7 @@ angular.module('mathApp')
         return a / b;
       },
       power: function(a, b) {
-        return a ^ b;
+        return Math.pow(a, b);
       }
     }
   })

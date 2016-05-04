@@ -1,13 +1,17 @@
 <div>
-  <select>
-    <option>add</option>
-    <option>subtract</option>
-    <option>divide</option>
-    <option>multiply</option>
-    <option>power</option>
-  </select>
-  <label>First Number: </label>
-  <input type="number" ng-model="firstNum">
-  <label>Second Number: </label>
-  <input type="number" ng-model="secondNum">
+    <select ng-model="operator">
+        <option>add</option>
+        <option>subtract</option>
+        <option>divide</option>
+        <option>multiply</option>
+        <option>power</option>
+    </select>
+    <label>First Number:
+    </label>
+    <input type="number" ng-model="firstNum">
+    <label>Second Number:
+    </label>
+    <input type="number" ng-model="secondNum">
+    <input type="button" ng-click="doSomething(operator, firstNum, secondNum)" value="Calculate!">
+    <h1>The value is: {{view.answer}} </h1>
 </div>
