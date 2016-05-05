@@ -2,7 +2,6 @@ angular.module('mathApp', [])
   .controller('mathController', ['$scope', 'mathService', function($scope, mathService){
     $scope.view = {}
     $scope.doSomething = function(operator, firstNum, secondNum) {
-      console.log('Balls');
       if(operator === 'add') {
         return $scope.view.answer = mathService.add(firstNum, secondNum);
       } else if (operator === 'subtract') {
